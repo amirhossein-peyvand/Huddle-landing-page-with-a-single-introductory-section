@@ -9,8 +9,6 @@
 
 html {
   font-size: 62.5%;
-  /* font-family: "Poppins", sans-serif;
-  font-family: "Open Sans", sans-serif; */
 }
 
 body {
@@ -24,4 +22,14 @@ body {
 
 #root {
   width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: url("./assets/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 2% -5px;
+    background-size: contain;
+    background-color: #674baf;
+  }
 }

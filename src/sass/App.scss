@@ -35,7 +35,7 @@
 
       h1 {
         font-family: "Poppins", sans-serif;
-        font-size: 2em;
+        font-size: 2rem;
       }
 
       p {
@@ -97,6 +97,104 @@
         border-color: $darker-magenta;
         i {
           color: $darker-magenta;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .app {
+    width: 50rem;
+
+    header {
+      img {
+        width: 20rem;
+      }
+    }
+
+    main {
+      row-gap: 5rem;
+      .contentContainer {
+        row-gap: 2.5rem;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          font-size: 2.5rem;
+        }
+
+        button {
+          font-size: 2rem;
+          width: 25rem;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    footer {
+      .iconsContainer {
+        span {
+          width: 5rem;
+          height: 5rem;
+
+          i {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .app {
+    width: 85%;
+    max-width: 125rem;
+
+    main {
+      flex-direction: row;
+      align-items: center;
+      column-gap: 4rem;
+      margin-top: 5rem;
+
+      .mainImageContainer {
+        width: 50%;
+      }
+
+      .contentContainer {
+        width: 50%;
+        text-align: left;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.7rem;
+        }
+
+        button {
+          margin: initial;
+          width: 16rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    footer {
+      justify-content: flex-end;
+
+      .iconsContainer {
+        span {
+          width: 4rem;
+          height: 4rem;
+
+          i {
+            font-size: 1.4rem;
+          }
         }
       }
     }
